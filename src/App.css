@@ -16,8 +16,10 @@ p {
   color: #000000;
   font: 400 0.8125rem/1rem "Quicksand", sans-serif; }
 
-ul li {
-  list-style: none; }
+ul {
+  padding-left: 0; }
+  ul li {
+    list-style: none; }
 
 img {
   max-width: 100%; }
@@ -36,7 +38,7 @@ img {
   .header .header-navigation .menu {
     padding: 10px 0; }
     .header .header-navigation .menu li {
-      padding: 28px 5px; }
+      padding: 28px 1px; }
       .header .header-navigation .menu li a {
         padding: 0 15px;
         font: 700 0.875rem/1.8125rem "Quicksand", sans-serif;
@@ -44,6 +46,23 @@ img {
         .header .header-navigation .menu li a:hover {
           background-color: #fc7d7d;
           border-radius: 5px; }
+.header .navbar-default .navbar-toggle {
+  margin: 35px 15px;
+  border-color: #e8e8e8; }
+
+/* styles for services section */
+.services {
+  background-color: #e8e8e8; }
+
+.services-list .single-service {
+  margin-bottom: 30px; }
+  .services-list .single-service:last-child {
+    margin-bottom: 0; }
+  .services-list .single-service img {
+    max-width: 200px;
+    margin-bottom: 10px; }
+  .services-list .single-service h3 {
+    margin-bottom: 25px; }
 
 /* styles for portfolio section */
 .portfolio {

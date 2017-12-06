@@ -28,6 +28,7 @@ p {
 }
 
 ul {
+  padding-left: 0;
   li {
     list-style: none;
   }
@@ -63,7 +64,7 @@ img {
     .menu {
       padding: 10px 0;
       li {
-        padding: 28px 5px;
+        padding: 28px 1px;
         a {
           padding: 0 15px;
           font: 700 0.875rem/1.8125rem $main-font;
@@ -76,8 +77,36 @@ img {
       }
     }
   }
+
+  .navbar-default .navbar-toggle {
+    margin: 35px 15px;
+    border-color: $secondary-color;
+  }
 }
 
+/* styles for services section */
+.services {
+  background-color: $secondary-color;
+}
+
+.services-list {
+  .single-service {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+    }
+  }
+}
 /* styles for portfolio section */
 .portfolio {
   background-color: $primary-color;
