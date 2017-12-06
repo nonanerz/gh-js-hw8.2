@@ -75,7 +75,9 @@ img {
     display: inline-block; }
 .header .header-navigation {
   background-image: none;
-  background-color: #ff5959; }
+  background-color: #ff5959;
+  border: none;
+  margin-bottom: 0; }
   .header .header-navigation .menu {
     padding: 10px 0; }
     .header .header-navigation .menu li {
@@ -98,6 +100,69 @@ img {
     .header .navbar-default .navbar-toggle:hover .icon-bar {
       background-color: #ff5959; }
   .header .navbar-default .navbar-toggle .icon-bar {
+    background-color: #e8e8e8; }
+
+/*Styles for hero section*/
+.hero {
+  background-color: cornflowerblue; }
+  @media (min-width: 768px) {
+    .hero .hero-content {
+      padding: 10px 0;
+      display: flex;
+      justify-content: center; } }
+  @media (min-width: 992px) {
+    .hero .hero-content {
+      padding: 100px 0; } }
+  .hero .hero-information {
+    max-width: 450px;
+    padding: 0 15px;
+    text-align: left; }
+    .hero .hero-information span {
+      display: inline-block;
+      margin-bottom: 20px;
+      font: 700 1.25rem/1.75rem "Droid Sans", sans-serif;
+      text-transform: uppercase;
+      color: black; }
+      @media (min-width: 992px) {
+        .hero .hero-information span {
+          font-size: 1.875rem;
+          line-height: 2rem; } }
+  .hero .main-title {
+    margin: 0;
+    font: 700 3.125rem/4.5rem "Droid Sans", sans-serif;
+    text-align: left;
+    color: black; }
+    @media (min-width: 992px) {
+      .hero .main-title {
+        font-size: 4.5rem; } }
+  .hero .description {
+    max-width: 450px;
+    margin-bottom: 28px;
+    text-align: left;
+    color: #000; }
+  .hero .hero-image {
+    display: none; }
+    @media (min-width: 768px) {
+      .hero .hero-image {
+        display: flex;
+        align-items: center; } }
+
+/* Styles for buttons*/
+.button {
+  display: inline-block;
+  min-width: 170px;
+  padding: 15px 20px;
+  margin: 0 20px 10px 0;
+  font: 700 1.125rem/1.125rem "Droid Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #ff5959;
+  border-radius: 5px;
+  background-color: #ff5959; }
+  .button:hover {
+    text-decoration: none;
+    color: #ff5959;
     background-color: #e8e8e8; }
 
 /* styles for services section */

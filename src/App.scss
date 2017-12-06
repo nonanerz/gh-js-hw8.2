@@ -110,6 +110,8 @@ img {
   .header-navigation {
     background-image: none;
     background-color: $primary-color;
+    border: none;
+    margin-bottom: 0;
 
     .menu {
       padding: 10px 0;
@@ -143,6 +145,84 @@ img {
     .icon-bar {
       background-color: $secondary-color;
     }
+  }
+}
+
+/*Styles for hero section*/
+.hero {
+  background-color: cornflowerblue;
+
+  .hero-content {
+    @media (min-width: 768px) {
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: 992px) {
+      padding: 100px 0;
+    }
+  }
+
+  .hero-information {
+    max-width: 450px;
+    padding: 0 15px;
+    text-align: left;
+    span {
+      display: inline-block;
+      margin-bottom: 20px;
+      font: 700 1.25rem/1.75rem $secondary-font;
+      text-transform: uppercase;
+      color: black;
+      @media (min-width: 992px) {
+        font-size: 1.875rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .main-title {
+    margin: 0;
+    font: 700 3.125rem/4.5rem $secondary-font;
+    text-align: left;
+    color: black;
+    @media (min-width: 992px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .description {
+    max-width: 450px;
+    margin-bottom: 28px;
+    text-align: left;
+    color: #000;
+  }
+
+  .hero-image {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+/* Styles for buttons*/
+.button {
+  display: inline-block;
+  min-width: 170px;
+  padding: 15px 20px;
+  margin: 0 20px 10px 0;
+  font: 700 1.125rem/1.125rem $secondary-font;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  background-color: $primary-color;
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+    background-color: $secondary-color;
   }
 }
 
