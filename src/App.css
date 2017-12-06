@@ -219,6 +219,43 @@ img {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
     border-radius: 10px; }
 
+/* Styles for blog section*/
+.blog {
+  background-color: #ff5959; }
+
+.articles-list .single-article {
+  max-width: 370px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #fff; }
+  .articles-list .single-article img {
+    margin-bottom: 10px; }
+  .articles-list .single-article .article-title {
+    margin-bottom: 8px;
+    font: 700 1.125rem/1.5rem "Quicksand", sans-serif; }
+    .articles-list .single-article .article-title a {
+      color: #fff; }
+      .articles-list .single-article .article-title a:hover {
+        text-decoration: underline; }
+  .articles-list .single-article .publish-date {
+    display: block;
+    margin-bottom: 10px;
+    font: 300 0.8125rem/1.5rem "Quicksand", sans-serif; }
+    .articles-list .single-article .publish-date .fa {
+      margin-right: 6px; }
+  .articles-list .single-article .excerpt {
+    margin-bottom: 6px;
+    color: #fff; }
+  .articles-list .single-article .author,
+  .articles-list .single-article .number-comments {
+    font: 400 0.8125rem/1.5rem "Quicksand", sans-serif; }
+    .articles-list .single-article .author .fa,
+    .articles-list .single-article .number-comments .fa {
+      margin-right: 14px;
+      font-size: 1rem; }
+  .articles-list .single-article .author {
+    margin-right: 36px; }
+
 /* Styles for footer */
 .footer {
   background-color: #ff5959;

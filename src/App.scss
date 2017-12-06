@@ -309,6 +309,67 @@ img {
   }
 }
 
+/* Styles for blog section*/
+
+.blog {
+  background-color: $primary-color;
+}
+
+.articles-list {
+  .single-article {
+    max-width: 370px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff;
+
+    img {
+      margin-bottom: 10px;
+    }
+
+    .article-title {
+      margin-bottom: 8px;
+      font: 700 1.125rem/1.5rem $main-font;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .publish-date {
+      display: block;
+      margin-bottom: 10px;
+      font: 300 0.8125rem/1.5rem $main-font;
+
+      .fa {
+        margin-right: 6px;
+      }
+    }
+
+    .excerpt {
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .author,
+    .number-comments{
+      font: 400 0.8125rem/1.5rem $main-font;
+
+      .fa {
+        margin-right: 14px;
+        font-size: 1rem;
+      }
+    }
+
+    .author {
+      margin-right: 36px;
+    }
+  }
+}
+
 
 /* Styles for footer */
 .footer {

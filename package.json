@@ -9,7 +9,9 @@
     "node-sass-chokidar": "0.0.3",
     "react-router-dom": "~4.2.2",
     "react-bootstrap": "~0.31.5",
-    "bootstrap": "~3.3.7"
+    "bootstrap": "~3.3.7",
+    "react-fontawesome": "~1.6.1",
+    "font-awesome": "~4.7.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
