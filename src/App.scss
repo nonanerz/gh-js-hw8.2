@@ -19,7 +19,57 @@ body {
 }
 
 .section-title {
+  position: relative;
+  max-width: 370px;
+  margin: 0 auto 60px;
+  padding-bottom: 18px;
   font: 400 1.875rem/3.125rem $main-font;
+  color: black;
+  background-position: bottom;
+  background-size: 100% 1px;
+  background-repeat: repeat-x;
+  background-image: repeating-linear-gradient(-90deg, #000 0, #000 46%, transparent 46%, transparent 54%);
+
+  &:before {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 6px;
+    height: 0;
+    border-color: #000 transparent;
+    border-style: solid;
+    border-width: 0 2px 4px;
+    transform: translateX(-50%);
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    border-width: 2px 3px 0;
+    border-style: solid;
+    border-color: #000 transparent transparent;
+  }
+}
+
+.section-title-white {
+  color: #fff;
+  background-image: repeating-linear-gradient(-90deg, #fff 0, #fff 46%, transparent 46%, transparent 54%);
+
+  &:before {
+    border-color: #fff transparent;
+  }
+
+  &:after {
+    border-color: #fff transparent transparent;
+  }
 }
 
 p {
@@ -64,7 +114,10 @@ img {
     .menu {
       padding: 10px 0;
       li {
-        padding: 28px 1px;
+        padding: 15px 1px;
+        @media (min-width: 768px) {
+          padding: 28px 1px;
+        }
         a {
           padding: 0 15px;
           font: 700 0.875rem/1.8125rem $main-font;
@@ -81,6 +134,15 @@ img {
   .navbar-default .navbar-toggle {
     margin: 35px 15px;
     border-color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color;
+      .icon-bar {
+        background-color: $primary-color;
+      }
+    }
+    .icon-bar {
+      background-color: $secondary-color;
+    }
   }
 }
 

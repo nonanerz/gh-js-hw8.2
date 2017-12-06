@@ -6,7 +6,7 @@ class Services extends  Component {
     }
     render () {
         return (
-            <section id="services" className="section">
+            <section id="services" className="section services">
                 <div className="container">
                     <div className="row">
                         <h2 className="section-title">Our Services</h2>
