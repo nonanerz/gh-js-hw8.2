@@ -150,7 +150,7 @@ img {
 
 /*Styles for hero section*/
 .hero {
-  background-color: cornflowerblue;
+  background-color: #fff;
 
   .hero-content {
     @media (min-width: 768px) {
@@ -317,12 +317,12 @@ img {
 
 .articles-list {
   .single-article {
-    max-width: 370px;
     margin-bottom: 20px;
     text-align: left;
     color: #fff;
 
     img {
+      width: 100%;
       margin-bottom: 10px;
     }
 
