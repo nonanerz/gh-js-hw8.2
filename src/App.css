@@ -1,28 +1,96 @@
-.App {
-  text-align: center;
-}
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+/* Global Variables */
+/* Base styles */
+html {
+  font-size: 16px; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+body {
+  text-align: center; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.section-title {
+  font: 400 1.875rem/3.125rem "Quicksand", sans-serif; }
 
-.App-title {
-  font-size: 1.5em;
-}
+p {
+  color: #000000;
+  font: 400 0.8125rem/1rem "Quicksand", sans-serif; }
 
-.App-intro {
-  font-size: large;
-}
+ul li {
+  list-style: none; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 54px 0 100px; }
+
+/* Styles for header */
+.header .navbar-brand {
+  height: auto; }
+  .header .navbar-brand h1 img {
+    display: inline-block; }
+.header .header-navigation {
+  background-image: none;
+  background-color: #ff5959; }
+  .header .header-navigation .menu {
+    padding: 10px 0; }
+    .header .header-navigation .menu li {
+      padding: 28px 5px; }
+      .header .header-navigation .menu li a {
+        padding: 0 15px;
+        font: 700 0.875rem/1.8125rem "Quicksand", sans-serif;
+        color: #e8e8e8; }
+        .header .header-navigation .menu li a:hover {
+          background-color: #fc7d7d;
+          border-radius: 5px; }
+
+/* styles for portfolio section */
+.portfolio {
+  background-color: #ff5959; }
+
+.portfolio-images li {
+  position: relative;
+  margin-bottom: 65px; }
+  .portfolio-images li:hover .overlay {
+    display: block; }
+  .portfolio-images li .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(255, 89, 89, 0.5); }
+
+.overlay-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .overlay-content h3 {
+    color: #fff; }
+
+.overlay-buttons a:first-child {
+  margin-right: 14px; }
+.overlay-buttons a {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  content: ''; }
+  .overlay-buttons a:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+    border-radius: 10px; }
+
+/* Styles for footer */
+.footer {
+  background-color: #ff5959;
+  padding: 38px 0; }
+  .footer .copyright {
+    color: #e8e8e8;
+    font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif; }
+
+/*# sourceMappingURL=App.css.map */
