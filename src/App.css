@@ -219,6 +219,57 @@ img {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
     border-radius: 10px; }
 
+/* Styles for Team section*/
+.team {
+  background-color: #e8e8e8; }
+
+.team-members-list .team-member {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .team-members-list .team-member span {
+    display: block;
+    margin-bottom: 22px; }
+  .team-members-list .team-member .information {
+    margin-bottom: 10px; }
+  .team-members-list .team-member .team-image {
+    width: 268px;
+    height: 268px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff5959; }
+
+.social-links {
+  display: flex; }
+  .social-links li {
+    margin: 5px; }
+    .social-links li a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      font-size: 0.875rem;
+      color: white;
+      border-radius: 50%; }
+      .social-links li a.facebook-icon {
+        background-color: #547bbd; }
+      .social-links li a.twitter-icon {
+        background-color: #74caf0; }
+      .social-links li a.google-icon {
+        background-color: #4a4a4a; }
+      .social-links li a.linked-icon {
+        background-color: #1385c8; }
+      .social-links li a.pinterest-icon {
+        background-color: #eb5756; }
+      .social-links li a:hover {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+        opacity: 0.9;
+        text-decoration: none; }
+      .social-links li a span {
+        line-height: 1.5rem; }
+
 /* Styles for blog section*/
 .blog {
   background-color: #ff5959; }

@@ -309,6 +309,84 @@ img {
   }
 }
 
+/* Styles for Team section*/
+.team {
+  background-color: $secondary-color;
+}
+
+.team-members-list {
+  .team-member {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .information {
+      margin-bottom: 10px;
+    }
+    .team-image {
+      width: 268px;
+      height: 268px;
+      display: block;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 2px solid #ff5959;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+
+  li {
+    margin: 5px;
+
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      font-size: 0.875rem;
+      color: white;
+      border-radius: 50%;
+
+      &.facebook-icon {
+        background-color: #547bbd;
+      }
+
+      &.twitter-icon {
+        background-color: #74caf0;
+      }
+
+      &.google-icon {
+        background-color: #4a4a4a;
+      }
+
+      &.linked-icon {
+        background-color: #1385c8;
+      }
+
+      &.pinterest-icon {
+        background-color: #eb5756;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+        opacity: 0.9;
+        text-decoration: none;
+      }
+
+      span {
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
 /* Styles for blog section*/
 
 .blog {
