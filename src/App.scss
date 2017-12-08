@@ -112,6 +112,9 @@ img {
     background-color: $primary-color;
     border: none;
     margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 
     .menu {
       padding: 10px 0;

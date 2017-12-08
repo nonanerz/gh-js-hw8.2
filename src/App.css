@@ -73,11 +73,15 @@ img {
   height: auto; }
   .header .navbar-brand h1 img {
     display: inline-block; }
+
 .header .header-navigation {
   background-image: none;
   background-color: #ff5959;
   border: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
   .header .header-navigation .menu {
     padding: 10px 0; }
     .header .header-navigation .menu li {
@@ -92,6 +96,7 @@ img {
         .header .header-navigation .menu li a:hover {
           background-color: #fc7d7d;
           border-radius: 5px; }
+
 .header .navbar-default .navbar-toggle {
   margin: 35px 15px;
   border-color: #e8e8e8; }
@@ -210,6 +215,7 @@ img {
 
 .overlay-buttons a:first-child {
   margin-right: 14px; }
+
 .overlay-buttons a {
   display: inline-block;
   width: 29px;
@@ -315,4 +321,64 @@ img {
     color: #e8e8e8;
     font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif; }
 
-/*# sourceMappingURL=App.css.map */
+.profile {
+  display: table-cell;
+  justify-content: center; }
+
+.profile-img {
+  background-color: #ffffff;
+  width: 268px;
+  height: 268px;
+  border: 2px solid #ff5959;
+  border-radius: 134px;
+  object-fit: cover; }
+
+.profile-name {
+  font-size: 26px; }
+
+.profile-info {
+  margin-left: 10px;
+  text-align: center; }
+
+.social-links {
+  margin: 12px 12px 0 0; }
+
+.article {
+  padding: 16px;
+  color: #ffffff;
+  display: table-cell;
+  justify-content: center;
+  margin-left: 32px; }
+
+.article-title {
+  margin-top: 21px;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  width: 259px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; }
+
+.article-text {
+  width: 366px;
+  height: 169px;
+  color: #e8e8e8;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font-size: 13px;
+  text-align: left; }
+
+.article-date {
+  color: #e8e8e8;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font-size: 13px;
+  text-align: left; }
+
+.article-image {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 13px; }
+
+.article-footer {
+  float: left;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif; }
