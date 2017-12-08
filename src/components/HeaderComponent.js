@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Nav, Navbar, MenuItem, NavbarCollapse, NavbarHeader, NavbarToggle } from 'react-bootstrap';
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 
@@ -10,8 +9,6 @@ class HeaderComponent extends Component {
     }
     render () {
         return (
-            <ScrollableAnchor id={'home'}>
-
             <header className="header">
                 <Navbar collapseOnSelect className="header-navigation">
                     <Navbar.Header>
@@ -32,7 +29,6 @@ class HeaderComponent extends Component {
                     </Navbar.Collapse>
                 </Navbar>
             </header>
-            </ScrollableAnchor>
         )
     }
 }

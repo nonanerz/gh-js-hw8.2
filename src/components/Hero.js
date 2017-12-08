@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class Hero extends  Component {
     render() {
         return (
+            <ScrollableAnchor id={'home'}>
             <section className="hero section">
                 <div className="container">
                     <div className="hero-content">
@@ -24,6 +26,7 @@ class Hero extends  Component {
                     </div>
                 </div>
             </section>
+            </ScrollableAnchor>
         )
     }
 }
