@@ -6,8 +6,8 @@ class Article extends  Component {
         return(
             <li className="single-article col-sm-6 col-md-4">
                 <article>
-                    <a href="#"><img src={require('../images/img-here-news.png')} alt="article-image" /></a>
-                    <h3 className="article-title"><a href="#">Theme HotelDeluxe Released</a></h3>
+                    <a href="#article-image"><img src={require('../images/img-here-news.png')} alt="article" /></a>
+                    <h3 className="article-title"><a href="#article">Theme HotelDeluxe Released</a></h3>
                     <span className="publish-date">
                                         <FontAwesome className='' name='calendar' />
                                         15th September, 21:24

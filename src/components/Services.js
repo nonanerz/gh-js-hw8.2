@@ -4,9 +4,6 @@ import Service from "./Service";
 
 
 class Services extends  Component {
-    constructor (props) {
-        super(props)
-    }
     render () {
         return (
             <ScrollableAnchor id={'services'}>

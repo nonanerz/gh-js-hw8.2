@@ -14,11 +14,11 @@ class Profile extends  Component {
                     consectetur, adipisci velit...
                 </p>
                 <ul className="social-links">
-                    <li><a href="#" className="twitter-icon"><FontAwesome className='' name='twitter' /></a></li>
-                    <li><a href="#" className="pinterest-icon"><FontAwesome className='' name='pinterest' /></a></li>
-                    <li><a href="#" className="facebook-icon"><FontAwesome className='' name='facebook' /></a></li>
-                    <li><a href="#" className="google-icon"><FontAwesome className='' name='google-plus' /></a></li>
-                    <li><a href="#" className="linked-icon"><FontAwesome className='' name='linkedin' /></a></li>
+                    <li><a href="#twitter" className="twitter-icon"><FontAwesome className='' name='twitter' /></a></li>
+                    <li><a href="#pinterest" className="pinterest-icon"><FontAwesome className='' name='pinterest' /></a></li>
+                    <li><a href="#facebook" className="facebook-icon"><FontAwesome className='' name='facebook' /></a></li>
+                    <li><a href="#google" className="google-icon"><FontAwesome className='' name='google-plus' /></a></li>
+                    <li><a href="#linked" className="linked-icon"><FontAwesome className='' name='linkedin' /></a></li>
                 </ul>
             </li>
         );
