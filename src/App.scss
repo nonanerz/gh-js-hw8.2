@@ -112,6 +112,9 @@ img {
     background-color: $primary-color;
     border: none;
     margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 
     .menu {
       padding: 10px 0;
@@ -150,11 +153,11 @@ img {
 
 /*Styles for hero section*/
 .hero {
-  background-color: cornflowerblue;
+  background-color: #fff;
 
   .hero-content {
     @media (min-width: 768px) {
-      padding: 10px 0;
+      padding: 80px 0;
       display: flex;
       justify-content: center;
     }
@@ -309,6 +312,145 @@ img {
   }
 }
 
+/* Styles for Team section*/
+.team {
+  background-color: $secondary-color;
+}
+
+.team-members-list {
+  .team-member {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .information {
+      margin-bottom: 10px;
+    }
+    .team-image {
+      width: 268px;
+      height: 268px;
+      display: block;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 2px solid #ff5959;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+
+  li {
+    margin: 5px;
+
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      font-size: 0.875rem;
+      color: white;
+      border-radius: 50%;
+
+      &.facebook-icon {
+        background-color: #547bbd;
+      }
+
+      &.twitter-icon {
+        background-color: #74caf0;
+      }
+
+      &.google-icon {
+        background-color: #4a4a4a;
+      }
+
+      &.linked-icon {
+        background-color: #1385c8;
+      }
+
+      &.pinterest-icon {
+        background-color: #eb5756;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+        opacity: 0.9;
+        text-decoration: none;
+      }
+
+      span {
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Styles for blog section*/
+
+.blog {
+  background-color: $primary-color;
+}
+
+.articles-list {
+  .single-article {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff;
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .article-title {
+      margin-bottom: 8px;
+      font: 700 1.125rem/1.5rem $main-font;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .publish-date {
+      display: block;
+      margin-bottom: 10px;
+      font: 300 0.8125rem/1.5rem $main-font;
+
+      .fa {
+        margin-right: 6px;
+      }
+    }
+
+    .excerpt {
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .author,
+    .number-comments{
+      font: 400 0.8125rem/1.5rem $main-font;
+
+      .fa {
+        margin-right: 14px;
+        font-size: 1rem;
+      }
+    }
+
+    .author {
+      margin-right: 36px;
+    }
+  }
+}
+
 
 /* Styles for footer */
 .footer {
@@ -319,4 +461,77 @@ img {
     color: $secondary-color;
     font: 400 0.8125rem/1.5625rem $main-font;
   }
+}
+
+.profile {
+  display: table-cell;
+  justify-content: center;
+}
+
+.profile-img {
+  background-color: #ffffff;
+  width: 268px;
+  height: 268px;
+  border: 2px solid #ff5959;
+  border-radius: 134px;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 26px;
+}
+
+.profile-info {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.social-links {
+  margin: 12px 12px 0 0;
+}
+.article {
+  padding: 16px;
+  color: #ffffff;
+  display: table-cell;
+  justify-content: center;
+  margin-left: 32px;
+}
+
+.article-title {
+  margin-top: 21px;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  width: 259px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+}
+
+.article-text {
+  width: 366px;
+  height: 169px;
+  color: #e8e8e8;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font-size: 13px;
+  text-align: left;
+}
+
+.article-date {
+  color: #e8e8e8;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font-size: 13px;
+  text-align: left;
+}
+
+.article-image {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.article-footer {
+  float: left;
+  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
 }
