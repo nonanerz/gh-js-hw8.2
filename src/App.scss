@@ -20,15 +20,20 @@ body {
 
 .section-title {
   position: relative;
-  max-width: 370px;
+  max-width: 270px;
   margin: 0 auto 60px;
   padding-bottom: 18px;
-  font: 400 1.875rem/3.125rem $main-font;
+  font: 400 1.575rem/3.125rem $main-font;
   color: black;
   background-position: bottom;
   background-size: 100% 1px;
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(-90deg, #000 0, #000 46%, transparent 46%, transparent 54%);
+
+  @media (min-width: 768px) {
+    max-width: 370px;
+    font-size: 1.875rem;
+  }
 
   &:before {
     position: absolute;
@@ -160,7 +165,7 @@ h3 {
 /*Styles for hero section*/
 .hero {
   background-color: #fff;
-  padding-top: 100px;
+  padding-top: 140px;
 
   .hero-content {
     @media (min-width: 768px) {
@@ -551,7 +556,7 @@ h3 {
   .information {
   text-align: left;
     p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 }

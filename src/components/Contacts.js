@@ -11,7 +11,7 @@ class Contacts extends  Component {
                     <div className="container">
                         <div className="row">
                             <h2 className="section-title">Contact Us</h2>
-                            <div className="col-lg-6">
+                            <div className="col-md-6">
                                 <form action="#" className="contact-form">
                                     <ul>
                                         <li><input type="text" placeholder="Full Name" name="name" className="name" id="name" /></li>
@@ -20,7 +20,7 @@ class Contacts extends  Component {
                                     </ul>
                                 </form>
                             </div>
-                            <div className="col-lg-6 information">
+                            <div className="col-md-6 information">
                                 <h3>Information</h3>
                                 <p>
                                     Proin nec dignissim tellus, ut hendrerit erat. Vivamus ut augue ac
