@@ -65,15 +65,21 @@ ul {
 img {
   max-width: 100%; }
 
+h3 {
+  margin: 0 0 20px;
+  font: 400 1.5rem/1.7rem "Quicksand", sans-serif;
+  color: #000; }
+
 .section {
-  padding: 54px 0 100px; }
+  padding: 120px 0; }
 
 /* Styles for header */
 .header .navbar-brand {
   height: auto; }
+  .header .navbar-brand h1 a {
+    display: inline-block; }
   .header .navbar-brand h1 img {
     display: inline-block; }
-
 .header .header-navigation {
   background-image: none;
   background-color: #ff5959;
@@ -96,7 +102,6 @@ img {
         .header .header-navigation .menu li a:hover {
           background-color: #fc7d7d;
           border-radius: 5px; }
-
 .header .navbar-default .navbar-toggle {
   margin: 35px 15px;
   border-color: #e8e8e8; }
@@ -109,7 +114,8 @@ img {
 
 /*Styles for hero section*/
 .hero {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-top: 100px; }
   @media (min-width: 768px) {
     .hero .hero-content {
       padding: 80px 0;
@@ -215,7 +221,6 @@ img {
 
 .overlay-buttons a:first-child {
   margin-right: 14px; }
-
 .overlay-buttons a {
   display: inline-block;
   width: 29px;
@@ -321,6 +326,7 @@ img {
     color: #e8e8e8;
     font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif; }
 
+/* Styles for portfolio section */
 .profile {
   display: table-cell;
   justify-content: center; }
@@ -382,3 +388,32 @@ img {
 .article-footer {
   float: left;
   font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif; }
+
+/* Styles for Contact section */
+.contact {
+  background-color: #e8e8e8; }
+  .contact .information {
+    text-align: left; }
+    .contact .information p {
+      margin-bottom: 15px; }
+
+.contact-form ul li {
+  margin-bottom: 13px; }
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none; }
+.contact-form textarea {
+  resize: none;
+  height: 170px; }
+
+.info-list {
+  margin-bottom: 35px; }
+  .info-list .fa {
+    margin-right: 10px; }
+  .info-list li {
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=App.css.map */
