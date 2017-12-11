@@ -20,15 +20,20 @@ body {
 
 .section-title {
   position: relative;
-  max-width: 370px;
+  max-width: 270px;
   margin: 0 auto 60px;
   padding-bottom: 18px;
-  font: 400 1.875rem/3.125rem $main-font;
+  font: 400 1.575rem/3.125rem $main-font;
   color: black;
   background-position: bottom;
   background-size: 100% 1px;
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(-90deg, #000 0, #000 46%, transparent 46%, transparent 54%);
+
+  @media (min-width: 768px) {
+    max-width: 370px;
+    font-size: 1.875rem;
+  }
 
   &:before {
     position: absolute;
@@ -88,8 +93,14 @@ img {
   max-width: 100%;
 }
 
+h3 {
+  margin: 0 0 20px;
+  font: 400 1.5rem/1.7rem $main-font;
+  color: #000;
+}
+
 .section {
-  padding: 54px 0 100px;
+  padding: 120px 0;
 }
 
 /* Styles for header */
@@ -98,7 +109,7 @@ img {
     height: auto;
     h1 {
       a {
-
+        display: inline-block;
       }
 
       img {
@@ -154,6 +165,7 @@ img {
 /*Styles for hero section*/
 .hero {
   background-color: #fff;
+  padding-top: 140px;
 
   .hero-content {
     @media (min-width: 768px) {
@@ -338,7 +350,7 @@ img {
       margin-bottom: 10px;
       background-color: #fff;
       border-radius: 50%;
-      border: 2px solid #ff5959;
+      border: 2px solid $primary-color;
     }
   }
 }
@@ -463,6 +475,7 @@ img {
   }
 }
 
+/* Styles for portfolio section */
 .profile {
   display: table-cell;
   justify-content: center;
@@ -472,7 +485,7 @@ img {
   background-color: #ffffff;
   width: 268px;
   height: 268px;
-  border: 2px solid #ff5959;
+  border: 2px solid $primary-color;
   border-radius: 134px;
   object-fit: cover;
 }
@@ -499,7 +512,7 @@ img {
 
 .article-title {
   margin-top: 21px;
-  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font: 400 0.8125rem/1.5625rem $main-font;
   width: 259px;
   height: 40px;
   color: #ffffff;
@@ -513,14 +526,14 @@ img {
   width: 366px;
   height: 169px;
   color: #e8e8e8;
-  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font: 400 0.8125rem/1.5625rem $main-font;
   font-size: 13px;
   text-align: left;
 }
 
 .article-date {
   color: #e8e8e8;
-  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font: 400 0.8125rem/1.5625rem $main-font;
   font-size: 13px;
   text-align: left;
 }
@@ -533,5 +546,46 @@ img {
 
 .article-footer {
   float: left;
-  font: 400 0.8125rem/1.5625rem "Quicksand", sans-serif;
+  font: 400 0.8125rem/1.5625rem $main-font;
+}
+
+/* Styles for Contact section */
+.contact {
+  background-color: $secondary-color;
+
+  .information {
+  text-align: left;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.contact-form {
+  ul {
+    li {
+      margin-bottom: 13px;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+  textarea {
+    resize: none;
+    height: 170px;
+  }
+}
+
+.info-list {
+  margin-bottom: 35px;
+  .fa {
+    margin-right: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
 }
