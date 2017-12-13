@@ -16,12 +16,12 @@ class HeaderComponent extends Component {
                     </Navbar.Header>
                     <Navbar.Collapse>
                         <Nav pullRight className="menu">
-                            <MenuItem eventKey={1} href="#home">Home</MenuItem>
-                            <MenuItem eventKey={2} href="#services">Services</MenuItem>
-                            <MenuItem eventKey={3} href="#portfolio">Portfolio</MenuItem>
-                            <MenuItem eventKey={4} href="#team">Our Team</MenuItem>
-                            <MenuItem eventKey={5} href="#blog">Blog</MenuItem>
-                            <MenuItem eventKey={6} href="#contact">Contact Us</MenuItem>
+                            <MenuItem href="#home">Home</MenuItem>
+                            <MenuItem href="#services">Services</MenuItem>
+                            <MenuItem href="#portfolio">Portfolio</MenuItem>
+                            <MenuItem href="#team">Our Team</MenuItem>
+                            <MenuItem href="#blog">Blog</MenuItem>
+                            <MenuItem href="#contact">Contact Us</MenuItem>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
