@@ -1,4 +1,4 @@
-###Project name is simple as "How i love JS"
+###Project name is simple as "Homework 8.2"
 
 #### Setup:
 

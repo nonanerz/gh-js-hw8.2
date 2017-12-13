@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
-import { Nav, Navbar, MenuItem } from 'react-bootstrap';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
 
 
 class HeaderComponent extends Component {
+
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(event) {
+        document.location.replace(event.target.getAttribute('href'))
+    }
+
     render () {
         return (
             <header className="header">
@@ -16,12 +26,12 @@ class HeaderComponent extends Component {
                     </Navbar.Header>
                     <Navbar.Collapse>
                         <Nav pullRight className="menu">
-                            <MenuItem href="#home">Home</MenuItem>
-                            <MenuItem href="#services">Services</MenuItem>
-                            <MenuItem href="#portfolio">Portfolio</MenuItem>
-                            <MenuItem href="#team">Our Team</MenuItem>
-                            <MenuItem href="#blog">Blog</MenuItem>
-                            <MenuItem href="#contact">Contact Us</MenuItem>
+                            <NavItem onClick={this.handleClick} href="#home">Home</NavItem>
+                            <NavItem onClick={this.handleClick} href="#services">Services</NavItem>
+                            <NavItem onClick={this.handleClick} href="#portfolio">Portfolio</NavItem>
+                            <NavItem onClick={this.handleClick} href="#team">Our Team</NavItem>
+                            <NavItem onClick={this.handleClick} href="#blog">Blog</NavItem>
+                            <NavItem onClick={this.handleClick} href="#contact">Contact Us</NavItem>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
